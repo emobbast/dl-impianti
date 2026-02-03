@@ -288,3 +288,120 @@
   max-width: 260px;
   margin: 0 auto;
 }
+
+/* === MENU MOBILE === */
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-header nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .site-header nav a {
+    padding: 10px 0;
+  }
+
+  .site-header nav.is-open {
+    display: flex;
+  }
+}
+
+/* === OVERRIDE: header layout logo sinistra / menu destra === */
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* assicura che il bottone menu stia a destra */
+.menu-toggle {
+  margin-left: auto;
+}
+
+/* === FIX DEFINITIVO HEADER MOBILE (NO COLUMN) === */
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* === FIX DEFINITIVO HEADER MOBILE (NO COLUMN) === */
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* === MENU MOBILE FULLSCREEN === */
+@media (max-width: 768px) {
+
+  .site-header nav {
+    position: fixed;
+    inset: 0; /* top right bottom left = 0 */
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+
+  .site-header nav.is-open {
+    transform: translateY(0);
+  }
+
+  .site-header nav a {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+  }
+
+  .menu-toggle {
+    position: relative;
+    z-index: 1000; /* sopra il menu */
+  }
+}
+
+
+/* === MENU MOBILE FULLSCREEN: X CHIUSURA === */
+@media (max-width: 768px) {
+
+  .menu-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* === MENU MOBILE: toggle visibilità icone === */
+@media (max-width: 768px) {
+  .menu-toggle.is-hidden {
+    display: none;
+  }
+}
