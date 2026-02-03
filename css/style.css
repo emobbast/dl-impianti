@@ -273,3 +273,18 @@
   background-color: var(--blue) ;/* blu */
   color: #ffffff;
 }
+
+/* === OVERRIDE: sezione installatori BTicino === */
+.section-bticino {
+  text-align: center;
+}
+
+.bticino-label {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.bticino-logo {
+  max-width: 260px;
+  margin: 0 auto;
+}
