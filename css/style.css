@@ -1,7 +1,7 @@
 :root {
-    --blue: #0B1F33;
+    --blue: #213139;
     --gray: #F2F4F7;
-    --yellow: #F4B400;
+    --yellow:#EF7528;
     --text: #1E1E1E;
   }
   
@@ -262,7 +262,7 @@
   display: inline-block;
   margin-top: 15px;
   padding: 10px 22px;
-  background-color: #facc15; /* giallo */
+  background-color:  var(--yellow);
   color: #1f2937;
   font-weight: 600;
   text-decoration: none;
