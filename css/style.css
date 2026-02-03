@@ -154,3 +154,122 @@
     font-size: 1.3rem;
   }
 }
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background-color: #eaeaea;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   SERVIZI – ESTENSIONE DEMO
+   (NON TOCCA COLORI E FONT)
+========================= */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Pagine servizio */
+
+.service-header {
+  margin-bottom: 40px;
+}
+
+.service-intro {
+  max-width: 700px;
+}
+
+.service-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  margin: 40px 0;
+}
+
+.service-content h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.service-content ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.service-content ul li {
+  margin-bottom: 10px;
+}
+
+.service-cta {
+  margin-top: 60px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .service-image img {
+    height: 220px;
+  }
+
+  .service-cta {
+    padding: 30px 20px;
+  }
+}
+
+/* === OVERRIDE LOGO HEADER === */
+.logo a {
+  font-size: 2.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: inherit;
+  text-decoration: none;
+
+}
+/* === OVERRIDE: footer info legali in riga === */
+.site-footer p {
+  line-height: 1.5;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* === OVERRIDE: pulsante servizi home === */
+.btn-secondary {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background-color: #facc15; /* giallo */
+  color: #1f2937;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--blue) ;/* blu */
+  color: #ffffff;
+}

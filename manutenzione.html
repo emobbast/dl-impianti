@@ -2,14 +2,15 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Contatti</title>
+  <title>Impianti Industriali | DL Impianti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-        <div class="logo">
+     <div class="logo">
   <a href="index.html">DL IMPIANTI</a>
 </div>
     <nav>
@@ -21,16 +22,32 @@
   </div>
 </header>
 
-<section class="section">
+<main class="section">
   <div class="container">
-    <h1>Contattaci</h1>
-    <p>Richiedi informazioni o un sopralluogo tecnico.</p>
 
-    <p><strong>Email:</strong> info@azienda.it</p>
-    <p><strong>Telefono:</strong> +39 000 0000000</p>
-    <p><strong>Zona operativa:</strong> Italia</p>
+    <header class="service-header">
+      <h1 id="service-title"></h1>
+      <p id="service-intro" class="service-intro"></p>
+    </header>
+
+    <div class="service-image">
+      <img id="service-image" src="" alt="" loading="lazy">
+    </div>
+
+    <section class="service-content">
+      <div id="service-description"></div>
+
+      <h2>Cosa include il servizio</h2>
+      <ul id="service-includes"></ul>
+    </section>
+
+    <div class="service-cta">
+      <p>Hai bisogno di questo servizio per la tua azienda?</p>
+      <a href="contatti.html" class="btn">Richiedi informazioni</a>
+    </div>
+
   </div>
-</section>
+</main>
 
 <footer class="site-footer">
   <div class="container">
@@ -41,5 +58,6 @@
 
 </footer>
 
+<script src="js/services.js"></script>
 </body>
 </html>
