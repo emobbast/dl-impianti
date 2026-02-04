@@ -811,14 +811,3 @@ body {
   margin-bottom: 15px;
 }
 
-.contact-form {
-  background: var(--gray);
-  padding: 30px;
-}
-
-.form-placeholder {
-  margin-top: 20px;
-  padding: 40px;
-  background: white;
-  border: 2px dashed #ccc;
-  text-align: center
