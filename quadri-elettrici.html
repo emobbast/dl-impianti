@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impianti Elettrici Industriali</title>
+  <title>Quadri Elettrici | DL Impianti</title>
+
   <link rel="stylesheet" href="css/style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,12 +15,11 @@
 
 <header class="site-header">
   <div class="container">
-       <div class="logo">
+    <div class="logo">
+      <a href="index.html">DL IMPIANTI</a>
+    </div>
 
-
-  <a href="index.html">DL IMPIANTI</a>
-</div>
-          <button class="menu-toggle" aria-label="Apri menu">☰</button>
+    <button class="menu-toggle" aria-label="Apri menu">☰</button>
 
     <nav>
       <button class="menu-close" aria-label="Chiudi menu">✕</button>
@@ -30,28 +31,72 @@
   </div>
 </header>
 
+<!-- BREADCRUMB -->
+<nav class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a>
+    <span>/</span>
+    <a href="servizi.html">Servizi</a>
+    <span>/</span>
+    <span class="current">Quadri Elettrici</span>
+  </div>
+</nav>
+
 <main class="section">
   <div class="container">
 
+    <!-- HEADER SERVIZIO -->
     <header class="service-header">
-      <h1 id="service-title"></h1>
-      <p id="service-intro" class="service-intro"></p>
+      <h1>Quadri Elettrici</h1>
+      <p class="service-intro">
+        Progettazione e realizzazione di quadri elettrici di potenza
+        e automazione per applicazioni industriali.
+      </p>
     </header>
 
+    <!-- IMMAGINE -->
     <div class="service-image">
-      <img id="service-image" src="" alt="" loading="lazy">
+      <img
+        src="img/quadri-elettrici.jpg"
+        alt="Quadri elettrici industriali"
+        loading="lazy"
+      >
     </div>
 
+    <!-- CONTENUTO -->
     <section class="service-content">
-      <div id="service-description"></div>
+      <div>
+        <p>
+          Progettiamo e realizziamo quadri elettrici industriali
+          su misura, studiati per garantire affidabilità, sicurezza
+          e facilità di manutenzione.
+        </p>
+
+        <p>
+          Ogni quadro viene realizzato secondo le normative vigenti
+          e testato accuratamente prima della messa in servizio.
+        </p>
+      </div>
 
       <h2>Cosa include il servizio</h2>
-      <ul id="service-includes"></ul>
+      <ul>
+        <li>Progettazione quadri di potenza e automazione</li>
+        <li>Cablaggio e assemblaggio componenti</li>
+        <li>Verifiche funzionali e collaudo</li>
+        <li>Documentazione tecnica e schemi elettrici</li>
+        <li>Assistenza post-installazione</li>
+      </ul>
     </section>
 
+    <!-- CTA -->
     <div class="service-cta">
-      <p>Hai bisogno di questo servizio per la tua azienda?</p>
-      <a href="contatti.html" class="btn">Richiedi informazioni</a>
+      <p>
+        Hai bisogno di un quadro elettrico
+        per il tuo impianto industriale?
+      </p>
+      <a href="contatti.html" class="btn">
+        Richiedi informazioni
+      </a>
     </div>
 
   </div>
@@ -59,14 +104,17 @@
 
 <footer class="site-footer">
   <div class="container">
-  <p>
-    © 2026 DL Impianti – Tutti i diritti riservati | DL Impianti – Impianti elettrici industriali | Sede legale: Via Esempio 123, 00000 Città (XX) | P. IVA: 00000000000 – C.F.: 00000000000 | Iscrizione REA: XX-0000000 | Email: info@dlimpianti.it – PEC: dlimpianti@pec.it
-  </p>
-</div>
-
+    <p>
+      © 2026 DL Impianti – Tutti i diritti riservati |
+      DL Impianti – Impianti elettrici industriali |
+      Sede legale: Via Esempio 123, 00000 Città (XX) |
+      P. IVA: 00000000000 – C.F.: 00000000000 |
+      Iscrizione REA: XX-0000000 |
+      Email: info@dlimpianti.it – PEC: dlimpianti@pec.it
+    </p>
+  </div>
 </footer>
 
-<script src="js/services.js"></script>
 <script src="js/menu.js"></script>
 </body>
 </html>

@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impianti Elettrici Industriali</title>
+  <title>Impianti Industriali | DL Impianti</title>
+
   <link rel="stylesheet" href="css/style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,12 +15,11 @@
 
 <header class="site-header">
   <div class="container">
-       <div class="logo">
+    <div class="logo">
+      <a href="index.html">DL IMPIANTI</a>
+    </div>
 
-
-  <a href="index.html">DL IMPIANTI</a>
-</div>
-          <button class="menu-toggle" aria-label="Apri menu">☰</button>
+    <button class="menu-toggle" aria-label="Apri menu">☰</button>
 
     <nav>
       <button class="menu-close" aria-label="Chiudi menu">✕</button>
@@ -30,28 +31,72 @@
   </div>
 </header>
 
+<!-- BREADCRUMB -->
+<nav class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a>
+    <span>/</span>
+    <a href="servizi.html">Servizi</a>
+    <span>/</span>
+    <span class="current">Impianti Industriali</span>
+  </div>
+</nav>
+
 <main class="section">
   <div class="container">
 
+    <!-- HEADER SERVIZIO -->
     <header class="service-header">
-      <h1 id="service-title"></h1>
-      <p id="service-intro" class="service-intro"></p>
+      <h1 id="service-title">Impianti Industriali</h1>
+      <p id="service-intro" class="service-intro">
+        Progettazione, realizzazione e manutenzione di impianti elettrici
+        industriali per stabilimenti produttivi e infrastrutture complesse.
+      </p>
     </header>
 
+    <!-- IMMAGINE -->
     <div class="service-image">
-      <img id="service-image" src="" alt="" loading="lazy">
+      <img
+        id="service-image"
+        src="img/impianti-industriali.jpg"
+        alt="Impianti elettrici industriali"
+        loading="lazy"
+      >
     </div>
 
+    <!-- CONTENUTO -->
     <section class="service-content">
-      <div id="service-description"></div>
+      <div id="service-description">
+        <p>
+          Realizziamo impianti elettrici industriali completi, studiati su misura
+          in base alle esigenze operative e produttive del cliente.
+        </p>
+
+        <p>
+          Operiamo nel rispetto delle normative CEI, garantendo elevati standard
+          di sicurezza, affidabilità e continuità di servizio.
+        </p>
+      </div>
 
       <h2>Cosa include il servizio</h2>
-      <ul id="service-includes"></ul>
+      <ul id="service-includes">
+        <li>Analisi tecnica preliminare e sopralluogo</li>
+        <li>Progettazione dell’impianto elettrico</li>
+        <li>Installazione e cablaggio</li>
+        <li>Collaudo e messa in servizio</li>
+        <li>Assistenza e manutenzione programmata</li>
+      </ul>
     </section>
 
+    <!-- CTA -->
     <div class="service-cta">
-      <p>Hai bisogno di questo servizio per la tua azienda?</p>
-      <a href="contatti.html" class="btn">Richiedi informazioni</a>
+      <p>
+        Hai bisogno di un impianto elettrico industriale
+        per la tua azienda?
+      </p>
+      <a href="contatti.html" class="btn">
+        Richiedi informazioni
+      </a>
     </div>
 
   </div>
@@ -59,14 +104,19 @@
 
 <footer class="site-footer">
   <div class="container">
-  <p>
-    © 2026 DL Impianti – Tutti i diritti riservati | DL Impianti – Impianti elettrici industriali | Sede legale: Via Esempio 123, 00000 Città (XX) | P. IVA: 00000000000 – C.F.: 00000000000 | Iscrizione REA: XX-0000000 | Email: info@dlimpianti.it – PEC: dlimpianti@pec.it
-  </p>
-</div>
-
+    <p>
+      © 2026 DL Impianti – Tutti i diritti riservati |
+      DL Impianti – Impianti elettrici industriali |
+      Sede legale: Via Esempio 123, 00000 Città (XX) |
+      P. IVA: 00000000000 – C.F.: 00000000000 |
+      Iscrizione REA: XX-0000000 |
+      Email: info@dlimpianti.it – PEC: dlimpianti@pec.it
+    </p>
+  </div>
 </footer>
 
-<script src="js/services.js"></script>
+
 <script src="js/menu.js"></script>
+
 </body>
 </html>

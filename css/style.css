@@ -1009,3 +1009,44 @@ body {
   }
 }
 
+/* =========================
+   BREADCRUMB
+========================= */
+
+.breadcrumb {
+  margin-top: 15px;
+  font-size: 0.85rem;
+}
+
+.breadcrumb .container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  white-space: nowrap;
+}
+
+.breadcrumb .current {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .breadcrumb {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+}
